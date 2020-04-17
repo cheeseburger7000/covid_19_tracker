@@ -6,4 +6,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.covid19Img {
+    width: 370px;
+    margin-top: 50px;
 }

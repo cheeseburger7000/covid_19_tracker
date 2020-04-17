@@ -11,6 +11,7 @@ const Cards = ({ basicIndex }) => {
     }
     return (
         <div className={styles.container}>
+            {/* TODO 抽取重复组件 */}
             <Grid container spacing={3} justify="center">
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
                     <CardContent>
