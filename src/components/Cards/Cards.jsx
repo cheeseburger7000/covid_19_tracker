@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent, Typography, Grid } from '@material-ui/core'
+import { Card, CardContent, Typography, Grid, CircularProgress } from '@material-ui/core'
 import CountUp from 'react-countup'
 import styles from './Cards.module.css'
 import cx from 'classnames'
@@ -7,7 +7,7 @@ import cx from 'classnames'
 const Cards = ({ basicIndex }) => {
     const { confirmed, recovered, deaths, lastUpdate } = basicIndex
     if (!confirmed) {
-        return 'Loading ...'
+        return <CircularProgress disableShrink />
     }
     return (
         <div className={styles.container}>
